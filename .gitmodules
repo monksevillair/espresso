@@ -1,0 +1,3 @@
+[submodule "src/vesc"]
+	path = src/vesc
+	url = git@github.com:monksevillair/vesc.git

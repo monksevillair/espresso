@@ -1,0 +1,13 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="75331313133351A00141", SYMLINK+="ttyArduinoPotBox"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", ATTRS{serial}=="9523834323435111A150", SYMLINK+="ttyAvatarPotBox"
+
+# Test Bench Rules
+#SUBSYSTEM=="tty", KERNELS=="2-1.2", SYMLINK+="ttyVescAuger"
+#SUBSYSTEM=="tty", KERNELS=="2-1.1.4", SYMLINK+="ttyVescTube"
+#SUBSYSTEM=="tty", KERNELS=="2-1.1.2", SYMLINK+="ttyArduinoAuger"
+
+# Espresso Machine Rules
+SUBSYSTEM=="tty", KERNELS=="2-1.2.3", SYMLINK+="ttyVescPortafilter"
+SUBSYSTEM=="tty", KERNELS=="2-1.2.2", SYMLINK+="ttyVescTilt"
+SUBSYSTEM=="tty", KERNELS=="2-1.2.1", SYMLINK+="ttyVescRotate"
+

@@ -1,0 +1,14 @@
+<launch>
+<include file="$(find vesc_driver)/launch/vesc_portafilter.launch">
+  <arg name="controller_id" value="5"/>
+  <arg name="port" value="/dev/ttyVescPortafilter"/>
+</include>
+<include file="$(find vesc_driver)/launch/vesc_tilt.launch">
+  <arg name="controller_id" value="5"/>
+  <arg name="port" value="/dev/ttyVescTilt"/>
+</include>  
+<include file="$(find vesc_driver)/launch/vesc_rotate.launch">
+  <arg name="controller_id" value="5"/>
+  <arg name="port" value="/dev/ttyVescRotate"/>
+</include>  
+</launch>
