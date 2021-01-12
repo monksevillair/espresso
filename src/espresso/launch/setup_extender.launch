@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find vesc_driver)/launch/vesc_extender.launch">
+  <arg name="controller_id" value="5"/>
+  <arg name="port" value="/dev/ttyVescExtender"/>
+</include>  
+</launch>

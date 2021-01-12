@@ -1,0 +1,15 @@
+<launch>
+<include file="$(find vesc_driver)/launch/vesc_table.launch">
+  <arg name="controller_id" value="1"/>
+  <arg name="port" value="/dev/ttyVescTable"/>
+</include>
+<include file="$(find vesc_driver)/launch/vesc_cup.launch">
+  <arg name="controller_id" value="2"/>
+  <arg name="port" value="/dev/ttyVescCup"/>
+</include>
+
+<node pkg="espresso" name="start_aduino_weight" type="start_arduino_weight.py"/>
+<node pkg="espresso" name="start_aduino_hall" type="start_arduino_hall.py"/>
+<node pkg="espresso" name="start_aduino_valve" type="start_arduino_valve.py"/>
+
+</launch>
